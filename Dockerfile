@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.1.0-gpu-py3
+FROM tensorflow/tensorflow:1.1.0-py3
 MAINTAINER Renars Liepins <renarl@gmail.com>
 
 
