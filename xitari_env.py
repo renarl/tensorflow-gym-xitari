@@ -87,7 +87,7 @@ class XitariEnv(gym.Env):
             screen, reward, terminal = self.gameEnv._newGame()
         
         if full_reset and self.gameEnv["_state"]["lives"] is not 3:
-            print 'WARNING: Xitari game lives count (%s) is not 3; repeating reset' % self.gameEnv["_state"]["lives"]
+            print('WARNING: Xitari game lives count (%s) is not 3; repeating reset' % self.gameEnv["_state"]["lives"])
             return self._reset(full_reset=full_reset)
         
         self.isDone = terminal
